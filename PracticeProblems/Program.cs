@@ -32,7 +32,7 @@ var categories = new List<Category>
 // Products group by categories
 #region Task1
 
-/*var categoricalProducts =
+var categoricalProducts =
     (from c in categories
     join p in products on c.CategoryId equals p.CategoryId
         into groupedProductCategory
@@ -44,7 +44,7 @@ foreach (var categoricalProduct in categoricalProducts)
     {
         Console.WriteLine($"\t Product: {product.ProductName}, Price: {product.Price}");
     }
-}*/
+}
 
 #endregion
 
