@@ -56,7 +56,7 @@ var cityProducts =
     join p in products on s.SupplierId equals p.SupplierId
         into supplierProductGroup
     select new CityBasedProduct(s.City, supplierProductGroup?.Count() ?? 0);
-foreach (var cityProduct in cityProducts ?? Enumerable.Empty<CityBasedProduct>())
+foreach (var cityProduct in cityProducts ?? [])
 {
     Console.WriteLine($"City: {cityProduct.City}, Total Products: {cityProduct.Count}");
 }
