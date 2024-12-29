@@ -58,7 +58,7 @@ var cityProducts =
     select new CityBasedProduct(s.City, supplierProductGroup?.Count() ?? 0);
 foreach (var cityProduct in cityProducts ?? [])
 {
-    Console.WriteLine($"City: {cityProduct.City}, Total Products: {cityProduct.Count}");
+    Console.WriteLine($"City: {cityProduct.City}, Total Products:  {cityProduct.Count}");
 }
 
 #endregion
