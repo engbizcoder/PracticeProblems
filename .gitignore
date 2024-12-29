@@ -1,6 +1,7 @@
 bin/
 obj/
 .idea/
+./idea/
 .git/
 /packages/
 riderModule.iml
