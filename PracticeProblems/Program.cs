@@ -40,7 +40,7 @@ var categoricalProducts =
 foreach (var categoricalProduct in categoricalProducts)
 {
     Console.WriteLine($"Category: {categoricalProduct?.CategoryName}");
-    foreach (var product in categoricalProduct?.GroupedProductCategory ?? Enumerable.Empty<Product>())
+    foreach (var product in categoricalProduct?.GroupedProductCategory ?? [])
     {
         Console.WriteLine($"\t Product: {product.ProductName}, Price: {product.Price}");
     }
